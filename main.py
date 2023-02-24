@@ -1,13 +1,17 @@
-from implementation import *
+from months import Months
+from healthy_snacks import Healthy_Snacks
+from user_profile import User_Profile
+from maybe_family import Maybe_Family
 
+month1 = Months()
+month1.print_pi_month()
 
-print(months[2])
+hsnacks = Healthy_Snacks()
+hsnacks.add_to_set(["mango", "bannana", "broccoli", "peas"])
+hsnacks.print_all()
 
-for snack in healthy_snacks:
-    print(snack)
+user = User_Profile()
+user.print_info()
 
-print(f"The user's name is {user_profile['First Name']} {user_profile['Last Name']}")
-print(f"He can't be reached at the email {user_profile['Email Address']} nor the number {user_profile['Phone Number']}")
-
-for relative in maybe_family:
-    print(f"{relative['First name']} is my {relative['Relation']}.")
+family = Maybe_Family()
+family.print_relations()
